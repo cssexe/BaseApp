@@ -7,6 +7,12 @@ import com.moha.baseapp.databinding.ActivitySecondScreenBinding
 
 class SecondScreen : Base<ActivitySecondScreenBinding>(){
     override val bindingInflater: (LayoutInflater) -> ActivitySecondScreenBinding = ActivitySecondScreenBinding::inflate
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        finalResults()
+    }
+
     override fun addCallBack() {}
     override fun finalResults() {
         binding.result.text = "Hi ${Constants.name} Welcome Back "
