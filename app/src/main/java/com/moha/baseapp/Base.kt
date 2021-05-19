@@ -15,5 +15,10 @@ abstract class Base <VB: ViewBinding> : AppCompatActivity () {
         super.onCreate(savedInstanceState)
         _binding = bindingInflater(layoutInflater)
         setContentView(_binding.root)
+
+
     }
+    abstract fun addCallBack()
 }
+
+
