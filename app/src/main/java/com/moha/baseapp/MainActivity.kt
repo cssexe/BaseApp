@@ -17,4 +17,6 @@ class MainActivity : Base<ActivityMainBinding>() {
         }
     }
 
+    override fun finalResults() {}
+
 }
