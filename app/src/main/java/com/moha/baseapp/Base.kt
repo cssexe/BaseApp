@@ -11,11 +11,12 @@ abstract class Base <VB: ViewBinding> : AppCompatActivity () {
     private lateinit var _binding: ViewBinding
     protected val binding = _binding as VB
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = bindingInflater(layoutInflater)
         setContentView(_binding.root)
-
 
     }
 
